@@ -13,7 +13,7 @@
 #include <time.h>
 
 int main (int argc, char *argv[]) {
-    int MAX_SIZE = *argv[0]; 
+	int MAX_SIZE = *argv[0]; 
 	int nIndice, nIndiceLinha, nIndiceColuna;
 	double matriz [MAX_SIZE][MAX_SIZE], vetor [MAX_SIZE], resultado [MAX_SIZE];
 	clock_t inicio, fim;
@@ -29,9 +29,9 @@ int main (int argc, char *argv[]) {
         	{
         		for (nIndiceColuna = 0; nIndiceColuna < nIndice; nIndiceColuna++)
             		{
-                		matriz[nIndiceLinha][nIndiceColuna] = (double)rand();
+                		matriz[nIndiceLinha][nIndiceColuna] = (double)rand() % MAX_SIZE;
             		}
-            		vetor[nIndiceLinha] = (double)rand();
+            		vetor[nIndiceLinha] = (double)rand() % MAX_SIZE;
             		resultado[nIndiceLinha] = 0;
         	}
 
