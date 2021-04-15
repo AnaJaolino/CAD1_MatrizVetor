@@ -47,7 +47,9 @@ int main (int argc, char *argv[]) {
         	fim = clock();
         	tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
-        	for (nIndiceLinha = 0; nIndiceLinha < nIndice; nIndiceLinha++)
+		
+        	/*Zerando o vetor resultado*/
+		for (nIndiceLinha = 0; nIndiceLinha < nIndice; nIndiceLinha++)
         	{
             		resultado[nIndiceLinha] = 0;
         	}
@@ -66,7 +68,8 @@ int main (int argc, char *argv[]) {
         	tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
 	}
-    printf("%f\n",tempoExec);
+	
+    	printf("%f\n",tempoExec);
 
 	return 0;
 }
