@@ -1,3 +1,9 @@
+! Aluna: Ana Carolina Jaolino
+! DRE: 117230950
+! Escola Politécnica
+! Universidade Federal do Rio de Janeiro - UFRJ
+! Engenharia de Computacao e Informacao
+ 
 program matriz_vetor_f
     implicit none
 
