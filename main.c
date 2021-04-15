@@ -41,7 +41,7 @@ int main (int argc, char *argv[]) {
         	{
             		for (nIndiceColuna = 0; nIndiceColuna < nIndice; nIndiceColuna++)
             		{
-                		resultado[nIndiceLinha] = resultado[nIndiceLinha] + (matriz[nIndiceLinha][nIndiceColuna] * vetor[nIndiceLinha]);
+                		resultado[nIndiceLinha] = resultado[nIndiceLinha] + (matriz[nIndiceLinha][nIndiceColuna] * vetor[nIndiceColuna]);
             		}
         	}
         	fim = clock();
@@ -61,7 +61,7 @@ int main (int argc, char *argv[]) {
         	{
             		for (nIndiceLinha = 0; nIndiceLinha < nIndice; nIndiceLinha++)
             		{
-                		resultado[nIndiceLinha] = resultado[nIndiceLinha] + (matriz[nIndiceLinha][nIndiceColuna] * vetor[nIndiceLinha]);
+                		resultado[nIndiceLinha] = resultado[nIndiceLinha] + (matriz[nIndiceLinha][nIndiceColuna] * vetor[nIndiceColuna]);
             		}
         	}
         	fim = clock();
