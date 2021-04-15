@@ -81,7 +81,7 @@ program matriz_vetor_f
         integer :: n, linha
         real(8) :: number
         do linha = 1, n
-            call random_number(number)
+            call random_number(valor)
             vetor(linha) = 0
         end do 
     end
