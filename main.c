@@ -6,13 +6,14 @@
  * Engenharia de Computacao e Informacao
  */
  
-#define MAX_SIZE    22000
+//#define MAX_SIZE    22000
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-int main ( ) {
+int main (int argc, char *argv[]) {
+    int MAX_SIZE = *argv[0]; 
 	int nIndice, nIndiceLinha, nIndiceColuna;
 	double matriz [MAX_SIZE][MAX_SIZE], vetor [MAX_SIZE], resultado [MAX_SIZE];
 	clock_t inicio, fim;
@@ -65,6 +66,7 @@ int main ( ) {
         	tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
 	}
+    printf("%f\n",tempoExec);
 
 	return 0;
 }
