@@ -6,7 +6,7 @@
  * Engenharia de Computacao e Informacao
  */
  
-//#define MAX_SIZE    22000
+//#define MAX_SIZE    21000
 
 #include <stdio.h>
 #include <stdlib.h>
