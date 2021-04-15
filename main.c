@@ -29,9 +29,9 @@ int main (int argc, char *argv[]) {
         	{
         		for (nIndiceColuna = 0; nIndiceColuna < nIndice; nIndiceColuna++)
             		{
-                		matriz[nIndiceLinha][nIndiceColuna] = (double)rand() % MAX_SIZE;
+                		matriz[nIndiceLinha][nIndiceColuna] = (double)(rand() % MAX_SIZE);
             		}
-            		vetor[nIndiceLinha] = (double)rand() % MAX_SIZE;
+            		vetor[nIndiceLinha] = (double)(rand() % MAX_SIZE);
             		resultado[nIndiceLinha] = 0;
         	}
 
