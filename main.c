@@ -17,7 +17,7 @@ int main (int argc, char *argv[]) {
 	int nIndice, nIndiceLinha, nIndiceColuna;
 	double matriz [MAX_SIZE][MAX_SIZE], vetor [MAX_SIZE], resultado [MAX_SIZE];
 	clock_t inicio, fim;
-	double tempoExec;
+	double tempoExecI, tempoExecJ;
 
     	srand(time(NULL));
 
@@ -45,7 +45,7 @@ int main (int argc, char *argv[]) {
             		}
         	}
         	fim = clock();
-        	tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+        	tempoExecI = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
 		
         	/*Zerando o vetor resultado*/
@@ -65,11 +65,11 @@ int main (int argc, char *argv[]) {
             		}
         	}
         	fim = clock();
-        	tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+        	tempoExecJ = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
 	}
 	
-    	printf("%f\n",tempoExec);
+    	printf("\n I Externo: %f \n J Externo: %f\n",tempoExecI, tempoExecJ);
 
 	return 0;
 }
