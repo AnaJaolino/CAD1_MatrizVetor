@@ -5,6 +5,7 @@
  * Universidade Federal do Rio de Janeiro - UFRJ
  * Engenharia de Computacao e Informacao
  */
+ 
 #define MAX_SIZE    1000
 
 #include <stdio.h>
@@ -44,7 +45,6 @@ int main ( ) {
         }
         fim = clock();
         tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-        printf ("n = %d ; Tempo (i ext, j int): %f\n", nIndice, tempoExec);
 
         for (nIndiceLinha = 0; nIndiceLinha < nIndice; nIndiceLinha++)
         {
@@ -63,7 +63,6 @@ int main ( ) {
         }
         fim = clock();
         tempoExec = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-        printf ("\n N = %d ; Tempo (i ext, j int): %f\n", nIndice, tempoExec);
 
 	}
 
