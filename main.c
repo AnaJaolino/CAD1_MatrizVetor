@@ -13,7 +13,7 @@
 #include <time.h>
 
 int main (int argc, char *argv[]) {
-	int MAX_SIZE = *argv[0]; 
+	int MAX_SIZE = atoi(argv[1]); 
 	int nIndice, nIndiceLinha, nIndiceColuna;
 	double matriz [MAX_SIZE][MAX_SIZE], vetor [MAX_SIZE], resultado [MAX_SIZE];
 	clock_t inicio, fim;
