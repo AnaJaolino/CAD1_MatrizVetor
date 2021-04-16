@@ -6,18 +6,24 @@
  * Engenharia de Computacao e Informacao
  */
  
-//#define MAX_SIZE    21000
+double **instantiate_matrix (int matriz_max)
+{
+    double **matriz = (double **)malloc((matriz_max + 1) * sizeof(double *));
+    for (int linha = 0; linha <= matrix_size; linha++)
+        matriz[linha] = (double *)malloc((matriz_max + 1) * sizeof(double));
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+    return matriz;
+}
 
-int main (int argc, char *argv[]) {
-	int MAX_SIZE = atoi(argv[1]); 
-	int nIndice, nIndiceLinha, nIndiceColuna;
-	double matriz [MAX_SIZE][MAX_SIZE], vetor [MAX_SIZE], resultado [MAX_SIZE];
-	clock_t inicio, fim;
-	double tempoExecI, tempoExecJ;
+int main (int argc, char *argv[])
+{
+    int MAX_SIZE = atoi(argv[1]);
+    int nIndice, nIndiceLinha, nIndiceColuna;
+    double *vetor = (double *)malloc((MAX_SIZE + 1) * sizeof(double));
+    double *resultado = (double *)malloc((MAX_SIZE + 1) * sizeof(double));
+    double **matriz = instantiate_matrix(MAX_SIZE);
+    clock_t inicio, fim;
+    double tempoExecI, tempoExecJ;
 
     	srand(time(NULL));
 
