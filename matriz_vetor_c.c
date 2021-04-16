@@ -6,10 +6,15 @@
  * Engenharia de Computacao e Informacao
  */
  
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 double **instantiate_matrix (int matriz_max)
 {
     double **matriz = (double **)malloc((matriz_max + 1) * sizeof(double *));
-    for (int linha = 0; linha <= matrix_size; linha++)
+    for (int linha = 0; linha <= matriz_max; linha++)
         matriz[linha] = (double *)malloc((matriz_max + 1) * sizeof(double));
 
     return matriz;
